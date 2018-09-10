@@ -1,0 +1,72 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  background-color: #57AD89;
+  background-size: 64px 128px;
+}
+.main .container {
+  height: 560px;
+  width: 1000px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+  align-self: center;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .main .container {
+    box-shadow: 2px 2px 20px;
+  }
+}
+.main .container #title {
+  text-align: center;
+  font-size: 2.5em;
+}
+.main .container .graphHolder {
+  position: absolute;
+  top: 6em;
+}
+
+.bar {
+  fill: #ad577b;
+}
+
+.visible {
+  opacity: 0.9;
+  display: inline;
+}
+
+.invisible {
+  opacity: 0;
+  display: none;
+}
+
+#tooltip {
+  background-color: #8957ad;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  height: 36px;
+  padding: 2px;
+  font: 14px sans-serif;
+  background: Snow;
+  border: 0px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+#description{
+  font-size: 12px;
+  text-align: center;
+  position: static;
+}
+
+#axisLabel{
+  font-size: 24px;
+  text-anchor: middle;
+}
